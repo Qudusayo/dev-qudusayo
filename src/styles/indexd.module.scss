@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "NuitoBold";
+    src: url("./Nunito/Nunito-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: 'Nuito';
+      src: url('./Nunito/Nunito-Regular.ttf')  format('truetype')
+}
+
 .headerr{
     display: flex;
     min-height: 70vh;
@@ -14,13 +24,15 @@
     h1{
         font-size: 3.5rem;
         text-shadow: 0px 7px 2px #998, 0px 6px 3px #998, 0px 9px 1px #998,
-			-2px 4px 2px #998, 0px 5px 2px #998, -2px 2px 2px #998;
+            -2px 4px 2px #998, 0px 5px 2px #998, -2px 2px 2px #998;
+            font-family: NuitoBold;
     }
 
     p{
         font-weight: 600;
         text-shadow: 0px 4px 2px #998, 0px 6px 3px #998, 0px 3px 1px #998,
-			-2px 4px 2px #998, 0px 5px 2px #998, -2px 2px 2px #998;
+            -2px 4px 2px #998, 0px 5px 2px #998, -2px 2px 2px #998;
+            font-family: Nuito;
     }
 }
 
