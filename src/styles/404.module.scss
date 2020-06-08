@@ -1,0 +1,30 @@
+.headerr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    text-align: center;
+
+    button {
+        width: 60%;
+        margin: 2% auto;
+        border-radius: 7px;
+        color: #000000;
+        background-color: rgba(255,250,150,.8);
+        outline: none;
+        border: none;
+        padding: 20px 50px;
+        font-size: large;
+        text-transform: uppercase;
+        font-family: "FredokaOne";
+        letter-spacing: 2px;
+        cursor: pointer;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+        transition: transform 0.1s linear;
+    
+        &:hover {
+            transform: translateY(-5%);
+        }
+    }
+}

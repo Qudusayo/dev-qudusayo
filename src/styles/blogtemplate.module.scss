@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Nuito';
+      src: url('./Nunito/Nunito-Regular.ttf')  format('truetype')
+}
+@font-face {
+    font-family: 'NuitoBold';
+      src: url('./Nunito/Nunito-Bold.ttf')  format('truetype')
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: NuitoBold;
+}
+  
+p, li{
+    font-family: Nuito;
+}
+
+pre{
+    border-radius: 15px;
+}
+
+.gatsby-highlight {
+    background-color: #1d1f21;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*="language-js"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
