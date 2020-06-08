@@ -1,40 +1,55 @@
-ol{
-    list-style-type: none;
-    width: 100%;
+@font-face {
+  font-family: "NuitoBold";
+  src: url("./Nunito/Nunito-Bold.ttf") format("truetype");
+}
+
+ol {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5%;
+  font-family: NuitoBold;
+}
+
+.list {
+  background-color: rgba(255, 250, 150, 0.8);
+  color: #010101;
+  margin: 5% auto;
+  width: 100%;
+  padding: 1em 1em 0 1em;
+  border-radius: 7px;
+
+  p {
+    color: #444444;
+  }
+
+  .summary {
+    width: 95%;
+    margin: 0 auto 2% auto;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
     margin: 0 auto;
-}
+  }
 
-.title{
+  .blogtitle {
+    color: #202020;
     text-align: center;
-    margin-top: 5%;
+  }
 }
 
-.list{
-    background-color: rgba(255,250,150,.8);
-    color: #010101;
-    margin: 5% auto;
-    width: 100%;
-    padding: 1em 1em 0 1em;
-    border-radius: 7px;
-
-    p{
-        color: #444444;
-    }
-
-    .summary{
-        width: 95%;
-        margin: 0 auto 2% auto;
-    }
-
-    div{
-        display: flex;
-        justify-content: space-between;
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .blogtitle{
-        color: #202020;
-        text-align: center;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: NuitoBold;
 }
