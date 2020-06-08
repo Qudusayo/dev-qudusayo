@@ -2,21 +2,28 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 
-import headerStyles from './header.module.scss'
+import useDarkMode from 'use-dark-mode';
 
-function Header() {
+import Toggler from './Toggler';
+import header from './header.module.scss'
+
+const Header = () => {
+    const darkMode = useDarkMode(false);
     return (
-        <header className={headerStyles.header}>
+        <header className={header.header}>
             <nav>
-                <ul className={headerStyles.navList}>
+                <ul className={header.navList}>
                     <li>
-                        <Link className={headerStyles.navItem}  activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
+                        <Link className={header.navItem} activeClassName={header.activeNavItem} to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem}  activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link>
+                        <Link className={header.navItem} activeClassName={header.activeNavItem} to="/blog">Blog</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem}  activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
+                        <Link className={header.navItem} activeClassName={header.activeNavItem} to="/about">About</Link>
+                    </li>
+                    <li>
+                        <Toggler value={darkMode.value} toggle={darkMode.toggle} />
                     </li>
                 </ul>
             </nav>

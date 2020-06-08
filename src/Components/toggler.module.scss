@@ -1,0 +1,44 @@
+.labeled{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    height: 30px;
+    position: relative;
+    width: 55px;
+    transform: scale(.8);
+}
+
+.checkboxed{
+    opacity: 0;
+    position: absolute;
+}
+
+.ball{
+    top: 3.5px;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform .2s linear;
+}
+
+.checkboxed:checked + .labeled .ball{
+    transform: translateX(23px);
+}
+
+.famoon{
+    color: #f1c40f;
+    margin-right: 5px;
+}
+
+.fasun{
+    color:#f39c12;
+}
+
+.famoon, .fasun{
+    font-size: large;
+}

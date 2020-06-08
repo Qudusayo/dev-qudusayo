@@ -7,7 +7,7 @@
   font-family: Nuito-Bold;
 
   &::selection {
-    background-color: rgba(255,250,150,.8);
+    background-color: rgba(255, 250, 150, 0.8);
   }
 }
 
@@ -24,7 +24,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
-  // background-color: #123;
+  transition: background-color 0.3s linear;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+
+  .devTitle,
+  .devBadge {
+    color: rgba(255, 250, 150, 0.8);
+  }
+
+  .devBadge{
+    text-shadow: none;
+  }
 }
 
 article,
@@ -73,7 +92,7 @@ a {
   }
 
   &::selection {
-    background-color: rgba(255,250,150,.8);
+    background-color: rgba(255, 250, 150, 0.8);
     color: #000000;
     text-decoration: underline;
   }
@@ -467,7 +486,7 @@ p {
   margin-bottom: 1.45rem;
 
   &::selection {
-    background-color: rgba(255,250,150,.8);
+    background-color: rgba(255, 250, 150, 0.8);
   }
 }
 
@@ -753,6 +772,6 @@ h5 {
   margin-top: 5% !important;
 
   &::selection {
-    background-color: rgba(255,250,150,.8);
+    background-color: rgba(255, 250, 150, 0.8);
   }
 }

@@ -10,8 +10,8 @@ const IndexPage = () => {
         <Layout>
             <SEO title="Home " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} />
             <div className={styles.headerr}>
-                <h1>Qudusayo</h1>
-                <p>FullStack Developer</p>
+                <h1 className="devTitle">Qudusayo</h1>
+                <p className="devBadge">FullStack Developer</p>
             </div>
         </Layout>
     )

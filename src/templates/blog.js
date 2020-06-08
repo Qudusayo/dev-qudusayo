@@ -2,7 +2,7 @@ import React from 'react'
 
 import {graphql} from 'gatsby'
 
-import styles from '../styles/blogtemplate.module.scss'
+import '../styles/template.module.scss'
 
 import Layout from '../Components/layout'
 

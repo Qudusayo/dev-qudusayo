@@ -15,8 +15,8 @@ function Footer() {
     `)
     return (
         <div className={footerStyles.footer}>
-        <a target="_blank" href="https://github.com/qudusayo">Github</a>
-            <p>Created by {data.site.siteMetadata.author}, &copy; 2020</p>
+        <a target="_blank" rel="noreferrer" href="https://github.com/qudusayo">Github</a>
+            <p>&copy; {data.site.siteMetadata.author}, 2020</p>
         </div>
     )
 }
