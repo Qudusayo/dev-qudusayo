@@ -2,8 +2,8 @@ import React from "react"
 
 import {Link} from 'gatsby'
  
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../Components/layout"
+import SEO from "../Components/seo"
 
 import styles from '../styles/404.module.scss'
 

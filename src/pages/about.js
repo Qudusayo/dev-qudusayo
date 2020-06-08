@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../Components/layout'
-import SEO from "../components/seo"
+import SEO from "../Components/seo"
 
 const AboutPage = () => {
     return (
