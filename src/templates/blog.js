@@ -2,7 +2,7 @@ import React from 'react'
 
 import {graphql} from 'gatsby'
 
-import '../styles/template.module.scss'
+import styles from '../styles/template.module.scss'
 
 import Layout from '../Components/layout'
 import SEO from '../Components/seo'
@@ -26,8 +26,8 @@ const Blog = (props) => {
     return (
         <Layout>
             <SEO title={props.data.markdownRemark.frontmatter.title} keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`, `${props.data.markdownRemark.frontmatter.title}`]} />
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
+            <h1 className={styles.headings}>{props.data.markdownRemark.frontmatter.title}</h1>
+            <div  className={styles.content} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
         </Layout>
     )
 }
