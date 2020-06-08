@@ -5,7 +5,7 @@
 
 ol {
   list-style-type: none;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -22,6 +22,15 @@ ol {
   width: 100%;
   padding: 1em 1em 0 1em;
   border-radius: 7px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: NuitoBold;
+  }
 
   p {
     color: #444444;
