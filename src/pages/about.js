@@ -9,7 +9,7 @@ const AboutPage = () => {
     return (
         <Layout>
             <SEO title="About " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} />
-            <h1>About Me</h1>
+            <h1 className={styles.heading}>About Me</h1>
             <h2 className={styles.heading}>Who am i ?</h2>
             <p>
                 I'm <b>Qudusayo</b> , a fullstack developer.<br />
