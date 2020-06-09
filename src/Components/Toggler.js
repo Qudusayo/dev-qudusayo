@@ -1,10 +1,10 @@
 import React from 'react'
 
-import styles from './toggler.module.scss'
+import styles from '../styles/general.module.scss'
 
 const Toggler = (props) => {
     return (
-        <div>
+        <div className={styles.toggler}>
             <input checked={props.value} onChange={props.toggle}  type="checkbox" id="checkbox" className={styles.checkboxed} />
                 <label htmlFor="checkbox" className={styles.labeled}>
                     <span className={styles.fasun}>☀</span>

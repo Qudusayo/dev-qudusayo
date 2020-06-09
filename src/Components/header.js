@@ -5,12 +5,12 @@ import { Link } from 'gatsby'
 import useDarkMode from 'use-dark-mode';
 
 import Toggler from './Toggler';
-import header from './header.module.scss'
+import header from '../styles/general.module.scss'
 
 const Header = () => {
     const darkMode = useDarkMode(false);
     return (
-        <header className={header.header}>
+        <header className={header.Header}>
             <nav>
                 <ul className={header.navList}>
                     <li>

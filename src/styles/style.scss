@@ -1,19 +1,14 @@
 @font-face {
-  font-family: "Nuito-Bold";
-  src: url("./Nunito/Nunito-Bold.ttf") format("truetype");
+  font-family: "Nuito";
+  src: url("./Nunito/Nunito-Regular.ttf") format("truetype");
 }
 
 * {
-  font-family: Nuito-Bold;
-
-  &::selection {
-    background-color: rgba(255, 250, 150, 0.8);
-  }
+  font-family: Nuito;
 }
 
 html {
-  // font-family: Pacifico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-family: monospace;
+  font-family: Nuito;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -27,22 +22,34 @@ body {
   transition: background-color 0.3s linear;
 }
 
+//Body DAY-NIGHT  MODE CONTROL
 body.light-mode {
   background-color: #fff;
   color: #333;
-  transition: background-color 0.3s ease;
 }
+
 body.dark-mode {
   background-color: #212121;
   color: #999;
 
   .devTitle,
   .devBadge {
-    color: rgba(255, 250, 150, 0.8);
+    color: rgba(96, 200, 248, 0.8);
+    text-shadow: 0px 7px 2px white, 0px 6px 3px white, 0px 9px 1px white,
+      -2px 4px 2px white, 0px 5px 2px white, -2px 2px 2px white;
   }
 
-  .devBadge{
+  .devBadge {
     text-shadow: none;
+    text-shadow: 0px 2px 2px white, 0px 3px 3px white, 0px 1px 1px white;
+  }
+
+  a {
+    color: #a1a1a1;
+  }
+
+  .footerLink {
+    color: #333333;
   }
 }
 
@@ -92,7 +99,7 @@ a {
   }
 
   &::selection {
-    background-color: rgba(255, 250, 150, 0.8);
+    background-color: rgba(96, 200, 248, 0.8);
     color: #000000;
     text-decoration: underline;
   }
@@ -486,7 +493,7 @@ p {
   margin-bottom: 1.45rem;
 
   &::selection {
-    background-color: rgba(255, 250, 150, 0.8);
+    background-color: rgba(96, 200, 248, 0.8);
   }
 }
 
@@ -760,6 +767,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+
+  .footerLink{
+    text-decoration: underline;
+  }
 }
 
 h1,
@@ -772,6 +783,6 @@ h5 {
   margin-top: 5% !important;
 
   &::selection {
-    background-color: rgba(255, 250, 150, 0.8);
+    background-color: rgba(96, 200, 248, 0.8);
   }
 }

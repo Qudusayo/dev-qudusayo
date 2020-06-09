@@ -21,7 +21,7 @@ This method is commonly used by some websites like **Twitter**, **Github**, **Co
 
 create a  new  const that holds a variable to your  mail function which will be exported  
 
-```js
+```javascript
 const nodemailer = require('nodemailer');
 
 const user = require('./user')
@@ -57,7 +57,7 @@ module.exports = mail;
 
 After the mail.js  setup successfully, you can close it and set up the configuration file (___user.js___)
 
-```js
+```javascript
 const user = {
     mail: '',       //gmail account
     auth: ''      //account password
@@ -71,7 +71,7 @@ module.exports = user;
 Lets setup our _server.js_ file for the installed dependencies.  
 We have to require some dependencies in order for our backend to run because our application is fully backend dependent;
 
-```js
+```javascript
 const express = require('express');
 const path = require('path');
 
@@ -95,7 +95,7 @@ We required  some packages
 
 We now have to render the _index.html_ file for the client in order for him/her to enter their email  address. This is also from the _server.js_
 
-```js
+```javascript
 server.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 })
@@ -104,7 +104,7 @@ server.get('/', (req, res) => {
 After the _mail.js and user.js_ file is set up successfully, add a form  to your  _index.html_ file  which takes an **input of email**  and makes  a **POST** request to the home route *'/'*
 We can now  handle the post request in our backeend  in _server.js_ file
 
-```js
+```javascript
 let code;
 server.post('/', (req, res) => {
     code = Math.floor(Math.random() * 903192)
@@ -118,7 +118,7 @@ A  code variable was initialized. When the user makes a post request to the home
 **Thats the End of the Sending Part**  
 Now we add  a  form with an input of tel which makes a post request to the **'/confirmEmail'** route to verify the code sent
 
-```js
+```javascript
 server.post('/confirmEmail', (req, res) => {
     if (req.body.code == code) {
         res.sendFile(path.join(__dirname, 'success.html'))
@@ -135,7 +135,7 @@ This checks if  the code tested by the user is equal to the code sent, if the  r
 
 We've been writing code since but we didn't run it, so we have to  create a port to start our server in our _server.js_ file
 
-```js
+```javascript
 const port = process.env.PORT || 5500
 server.listen(port, () => console.log(`Server started on port ${port}`))
 ```

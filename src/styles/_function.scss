@@ -1,7 +1,0 @@
-@function bgcolor($color){
-    @if(lightness($color) > 50%){
-        @return #4573;
-    }@else{
-        @return rgba(255,250,150,.8);
-    }
-}

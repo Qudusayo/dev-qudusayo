@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import styles from '../styles/blog.module.scss'
+import styles from '../styles/general.module.scss'
 
 import Layout from '../Components/layout'
 import SEO from "../Components/seo"
@@ -33,6 +33,7 @@ const BlogPage = () => {
     return (
         <Layout>
             <SEO title="Blog " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} description="A presonal blog where Qudusayo shares some programming  information and solution" />
+            <div className={styles.Blog}>
             <h1 className={styles.title}>Blog</h1>
             <ol className={styles.orderedList}>
                 {data.allMarkdownRemark.edges.map((edge, id) => {
@@ -50,6 +51,7 @@ const BlogPage = () => {
                     )
                 })}
             </ol>
+            </div>
         </Layout>
     )
 }
