@@ -13,7 +13,7 @@ const AboutPage = () => {
             <h2 className={styles.heading}>Who am i ?</h2>
             <p>
                 I'm <b>Qudusayo</b> , a fullstack developer.<br />
-                My stacks of development are SQL, ReactJS, Gatsby, NodeJS, GraphQL, HTML, HandleBars, CSS, SCSS, JavaScript, and Jquery, but my loved stacks for development are React and SCSS for frontend development, Node for backend development and SQL for database
+                My stacks of development are SQL, MongoDB, NodeJS, ReactJS, Gatsby, GraphQL, HTML, HandleBars, CSS, SCSS, JavaScript, and Jquery, but my loved stacks for development are React and SCSS for frontend development, Node for backend development and SQL for database
             </p>
 
             <h2 className={styles.heading}>My Loved Works</h2>

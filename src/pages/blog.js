@@ -32,7 +32,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <SEO title="Blog " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} />
+            <SEO title="Blog " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} description="A presonal blog where Qudusayo shares some programming  information and solution" />
             <h1 className={styles.title}>Blog</h1>
             <ol className={styles.orderedList}>
                 {data.allMarkdownRemark.edges.map((edge, id) => {

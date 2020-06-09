@@ -13,6 +13,7 @@ import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 export const query = graphql`
     query($slug: String){
         markdownRemark (fields: { slug: {eq: $slug}}){
+            excerpt
             frontmatter{
                 title
                 date
@@ -25,7 +26,7 @@ export const query = graphql`
 const Blog = (props) => {
     return (
         <Layout>
-            <SEO title={props.data.markdownRemark.frontmatter.title} keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`, `${props.data.markdownRemark.frontmatter.title}`]} />
+            <SEO title={props.data.markdownRemark.frontmatter.title} description={props.data.markdownRemark.excerpt} keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`, `${props.data.markdownRemark.frontmatter.title}`]} />
             <h1 className={styles.headings}>{props.data.markdownRemark.frontmatter.title}</h1>
             <div  className={styles.content} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
         </Layout>

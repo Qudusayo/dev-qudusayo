@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Dev Qudusayo",
+    title: "Qudusayo",
     author: "Qudusayo",
-    "description": "Just to share a quick info for pals"
+    "description": "A site of Qudusayo made to share programming information to programmers."
   },
   plugins: [
   	'gatsby-plugin-catch-links',
