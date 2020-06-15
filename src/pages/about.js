@@ -30,6 +30,7 @@ const AboutPage = () => {
             <p>
                 Coding all night doesn't make you better than other, but focusing and practicing does . Try to follow a scheme of practice and challenge
             </p>
+            <div class="fb-comments" data-href="http://qudusayoblog.netlify.app/" data-numposts="5" data-width=""></div>
         </Layout>
     )
 }
