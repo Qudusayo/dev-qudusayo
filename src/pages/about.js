@@ -9,6 +9,8 @@ const AboutPage = () => {
     return (
         <Layout>
             <SEO title="About " keywords={[`qudusayo`, `About qudusayo`, `qudusayo-blog`, `dev-qudusayo`, `Ayoola Abdulqudus`]} />
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=293222885149153&autoLogAppEvents=1" nonce="1i2rsuAX"></script>
             <h1 className={styles.aboutHeader}>About Me</h1>
             <h2 className={styles.aboutHeader}>Who am i ?</h2>
             <p>
@@ -18,12 +20,12 @@ const AboutPage = () => {
 
             <h2 className={styles.aboutHeader}>My Loved Works</h2>
             <p>
-                I loved algorithms and data structure due to my passion for mathematics. I do take challenges in some sites, so I prefer <a href="https://codility.app" target="_blank" rel="noreferrer" style={{cursor: "pointer"}}>Codility</a> over <a href="https://hackerrank.com" target="_blank"  rel="noreferrer" style={{cursor: "pointer"}}>Hackerrank</a> because <a href="https://codility.app" target="_blank" rel="noreferrer" style={{cursor: "pointer"}}>Codility</a> challenges with time and gives solution result in percentage due to the time complexity and test passed by the code.
+                I loved algorithms and data structure due to my passion for mathematics. I do take challenges in some sites, so I prefer <a href="https://codility.app" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>Codility</a> over <a href="https://hackerrank.com" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>Hackerrank</a> because <a href="https://codility.app" target="_blank" rel="noreferrer" style={{ cursor: "pointer" }}>Codility</a> challenges with time and gives solution result in percentage due to the time complexity and test passed by the code.
             </p>
 
             <h2 className={styles.aboutHeader}>Target</h2>
             <p>
-                I'm working to be a great developer in future, still code  everyday.. 
+                I'm working to be a great developer in future, still code  everyday..
             </p>
 
             <h2 className={styles.aboutHeader}>Word For Programmers</h2>
